@@ -1,0 +1,13 @@
++++ markdebil
+tytul: Changelog
+iq: 120
+ton: spokojny
++++
+
+## 1.0.0
+
+?? Co nowego?
+- **Vibe-C**: `nocap` zamiast `assert`
+- *Machen*: `ziel` z wykrzyknikiem to cel zawsze wykonywany
+
+!!!BREAKING!!! `.inc` bez sygnatury nie jest już Szmelc.inc.

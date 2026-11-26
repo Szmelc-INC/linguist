@@ -486,6 +486,8 @@ disambiguations:
   - language: Slice
 - extensions: ['.inc']
   rules:
+  - language: Szmelc.inc
+    pattern: '^%szmelc\.inc\b'
   - language: Motorola 68K Assembly
     named_pattern: m68k
   - language: PHP

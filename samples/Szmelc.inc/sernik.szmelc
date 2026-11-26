@@ -1,0 +1,27 @@
+%szmelc.inc 1.0 manifest
+;; Szmelc.inc manifest: what this project is and who incorporated it.
+@corp    "Szmelc.INC"
+@ticker  SZM
+@motto   "Szmelc™ — quality you can smell"
+@include "common.inc"
+
+[project]
+name     = "Sernik"
+version  = 6.6.6
+license  = MIT
+homepage = "https://github.com/Szmelc-INC"
+tags     = [sernik, szmelc, inc]
+stable   = tak
+
+[project.authors]
+lead     = "Szmelc.INC"
+helpers  = &shared.helpers
+
+[build]
+lang     = "Vibe-C"
+entry    = "src/main.vc"
+flags    = $SZMELC_FLAGS
+notes    = <<<
+  Built in Machen, tested in R3000,
+  documented in Markdebil.
+>>>

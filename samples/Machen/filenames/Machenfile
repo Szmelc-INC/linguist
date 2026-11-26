@@ -1,0 +1,8 @@
+#! machen 1.0
+setze NAME = "sernik"
+
+standard bauen
+
+ziel bauen:
+    mach vibecc -o $NAME src/main.vc
+    sag "ok"

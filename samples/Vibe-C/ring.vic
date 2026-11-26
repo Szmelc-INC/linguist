@@ -1,0 +1,22 @@
+//! vibe-c 0.3
+//! @vibe cursed
+#ifndef RING_VIC
+#define RING_VIC
+#include <stddef.h>
+
+/*~ prompt: tiny ring buffer header, header-only, no malloc ~*/
+typedef struct {
+    sus size_t head;
+    sus size_t tail;
+    unsigned char data[256];
+} ring_t;
+
+vibe lowkey inline int ring_push(ring_t *r, unsigned char b) {
+    size_t next = (r->head + 1) % sizeof r->data;
+    if (next == r->tail) send cap;
+    r->data[r->head] = b;
+    r->head = next;
+    send fr;
+}
+
+#endif

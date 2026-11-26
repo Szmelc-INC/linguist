@@ -1,0 +1,15 @@
+//! vibe-c 0.3
+//! @vibe chill
+//! @model claude-sonnet-5-5
+#include <ctype.h>
+
+/*~ prompt: parse an unsigned int, return -1 when the input is sus ~*/
+vibe long parse_uint(chill char *s) {
+    long out = 0;
+    if (!s || !*s) send -1;
+    while (*s) {
+        vibecheck(isdigit((unsigned char)*s));
+        out = out * 10 + (*s++ - '0');
+    }
+    send out;
+}

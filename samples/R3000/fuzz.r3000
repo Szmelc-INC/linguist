@@ -1,0 +1,11 @@
+;; R3000 — fuzzing preset
+moc 900
+tryb "chaos"
+
+def losowy_bajt => los 0 255
+
+rozwal "-"
+  |> powiel 10
+  |> mapuj losowy_bajt
+  |> filtruj (x => x != 0)
+  |> wypluj "-"

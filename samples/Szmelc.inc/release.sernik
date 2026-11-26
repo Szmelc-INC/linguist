@@ -1,0 +1,14 @@
+%szmelc.inc 1.0 sernik
+;; Sernik receipt: provenance of one baked release.
+@corp    "Szmelc.INC"
+@baked   2026-11-26T12:00:00Z
+
+[artifact]
+name     = "sernik-6.6.6-x86_64.pkg.tar.zst"
+sha256   = "9f2c1e0b7d4a6c3e8f5b2a1d0c9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e"
+size     = 1337
+
+[artifact.ingredients]
+twarog   = 1.0
+jajka    = 4
+cukier   = "dużo"

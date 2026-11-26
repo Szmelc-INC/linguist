@@ -175,6 +175,13 @@ vendor/grammars/Syntax-highlighting-for-PostCSS:
 vendor/grammars/SystemVerilog:
 - source.systemverilog
 - source.ucfconstraints
+vendor/grammars/Szmelc-Languages:
+- source.machen
+- source.r3000
+- source.szajs
+- source.szmelc-inc
+- source.vibe-c
+- text.markdebil
 vendor/grammars/TLA:
 - source.tla
 vendor/grammars/TXL:
