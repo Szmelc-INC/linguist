@@ -1,0 +1,19 @@
+#!/usr/bin/env szajs
+#@ nazwa: backup
+#@ opis: kopia katalogu domowego, bez szajsu z cache
+
+stala ZRODLO = srodowisko("HOME")
+stala CEL = "/mnt/kopia"
+
+robota czy_pomijac(sciezka)
+    daj sciezka.zawiera(".cache") lub sciezka.zawiera("node_modules")
+koniec
+
+dla plik w lista("${ZRODLO}/**")
+    jesli nie czy_pomijac(plik)
+        kopiuj(plik, CEL)
+    koniec
+koniec
+
+wypisz prawda i nie falsz
+wypisz nic

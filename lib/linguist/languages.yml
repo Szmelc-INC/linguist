@@ -4857,6 +4857,23 @@ Macaulay2:
   tm_scope: source.m2
   color: "#d8ffff"
   language_id: 34167825
+Machen:
+  type: programming
+  color: "#1f8a8a"
+  aliases:
+  - machenfile
+  extensions:
+  - ".machen"
+  - ".mach"
+  filenames:
+  - Machendatei
+  - Machenfile
+  - machenfile
+  interpreters:
+  - machen
+  tm_scope: source.machen
+  ace_mode: makefile
+  language_id: 874853947
 Makefile:
   type: programming
   color: "#427819"
@@ -4902,6 +4919,19 @@ Mako:
   tm_scope: text.html.mako
   ace_mode: text
   language_id: 221
+Markdebil:
+  type: prose
+  color: "#c0c0c0"
+  aliases:
+  - debil
+  extensions:
+  - ".debil"
+  - ".dbl"
+  - ".mdbl"
+  tm_scope: text.markdebil
+  ace_mode: markdown
+  wrap: true
+  language_id: 149998469
 Markdown:
   type: prose
   color: "#083fa1"
@@ -6697,6 +6727,23 @@ R:
   codemirror_mode: r
   codemirror_mime_type: text/x-rsrc
   language_id: 307
+R3000:
+  type: programming
+  color: "#b83a3a"
+  aliases:
+  - r3k
+  - rozkurwator
+  - rozkurwator-3000
+  extensions:
+  - ".r3k"
+  - ".r3000"
+  - ".rzk"
+  interpreters:
+  - r3k
+  - rozkurwator
+  tm_scope: source.r3000
+  ace_mode: text
+  language_id: 151841881
 RAML:
   type: markup
   ace_mode: yaml
@@ -8121,6 +8168,37 @@ SystemVerilog:
   codemirror_mode: verilog
   codemirror_mime_type: text/x-systemverilog
   language_id: 363
+Szajs Script:
+  type: programming
+  color: "#7a5c2e"
+  aliases:
+  - szajs
+  extensions:
+  - ".szajs"
+  - ".sx"
+  interpreters:
+  - szajs
+  tm_scope: source.szajs
+  ace_mode: text
+  language_id: 207005307
+Szmelc.inc:
+  type: data
+  color: "#105c5c"
+  aliases:
+  - szmelc
+  - szmelc-inc
+  - sernik
+  extensions:
+  - ".szmelc"
+  - ".inc"
+  - ".sernik"
+  filenames:
+  - Szmelc.inc
+  - Szmelcfile
+  - szmelc.inc
+  tm_scope: source.szmelc-inc
+  ace_mode: ini
+  language_id: 29454687
 TI Program:
   type: programming
   ace_mode: text
@@ -8801,6 +8879,18 @@ Vespa Schema Definition:
   aliases:
   - vespa
   language_id: 587879709
+Vibe-C:
+  type: programming
+  color: "#7fffd4"
+  aliases:
+  - vibec
+  extensions:
+  - ".vc"
+  - ".vic"
+  - ".vice"
+  tm_scope: source.vibe-c
+  ace_mode: c_cpp
+  language_id: 900489107
 Vim Help File:
   type: prose
   color: "#199f4b"

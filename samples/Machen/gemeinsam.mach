@@ -1,0 +1,9 @@
+#! machen 1.0
+# Shared targets.
+setze PREFIX ?= umgebung("PREFIX", "/usr/local")
+
+ziel installieren!: bauen
+    fuer datei in glob("build/*")
+        mach install -Dm755 $datei ${PREFIX}/bin
+    ende
+    sag "Installiert nach ${PREFIX}"

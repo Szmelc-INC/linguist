@@ -647,6 +647,7 @@ class TestHeuristics < Minitest::Test
       "POV-Ray SDL" => all_fixtures("POV-Ray SDL", "*.inc"),
       "SourcePawn" => all_fixtures("SourcePawn", "*.inc"),
       "Assembly" => all_fixtures("Assembly", "*.inc"),
+      "Szmelc.inc" => all_fixtures("Szmelc.inc", "*.inc"),
       nil => all_fixtures("C++", "*.inc") +
         all_fixtures("HTML", "*.inc") +
         all_fixtures("Pawn", "*.inc") +

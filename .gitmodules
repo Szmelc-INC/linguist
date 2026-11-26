@@ -213,6 +213,9 @@
 [submodule "vendor/grammars/SystemVerilog"]
 	path = vendor/grammars/SystemVerilog
 	url = https://github.com/TheClams/SystemVerilog
+[submodule "vendor/grammars/Szmelc-Languages"]
+	path = vendor/grammars/Szmelc-Languages
+	url = https://github.com/Szmelc-INC/Szmelc-Languages
 [submodule "vendor/grammars/TLA"]
 	path = vendor/grammars/TLA
 	url = https://github.com/agentultra/TLAGrammar

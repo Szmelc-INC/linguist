@@ -1,0 +1,32 @@
+//! vibe-c 0.3
+//! @vibe immaculate
+//! @model claude-opus-5-5
+//! @license MIT
+#include <stdio.h>
+#include <stdlib.h>
+#vibe strict
+
+/*~ prompt: a function that doubles a number, but make it bussin ~*/
+vibe int double_it(chill int x) {
+    send x * 2;
+}
+
+lowkey int counter = 0;
+
+int main(void) {
+    nocap(double_it(21) == 42);
+    yolo {
+        int *p = NULL;
+        if (p == NULL) {
+            printf("null pointer, no cap\n");
+        }
+    }
+    for (int i = 0; i < 3; i++) {
+        counter += double_it(i);
+    }
+    if (counter != 6) {
+        bruh("math is not mathing");
+    }
+    printf("%d %s\n", double_it(21), fr ? "fr" : "cap");
+    send 0;
+}

@@ -1,0 +1,7 @@
+#! machen 1.0
+# Machendatei: the long German name, same language.
+standard test
+
+ziel test!:
+    mach ./run-tests.sh
+    sag "alle Tests grün"

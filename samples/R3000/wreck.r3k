@@ -1,0 +1,23 @@
+#!/usr/bin/env r3k
+;; R3000 — Rozkurwator 3000
+;; @wersja 1.0  @licencja MIT
+moc 3000
+tryb "ostrozny"
+
+def podwoj x => x * 2
+
+rozwal "dane/wejscie.bin"
+  |> tnij 64
+  |> mieszaj ziarno: 1337
+  |> zgniec "zstd"
+  |> wypluj "out/wynik.r3x"
+
+petla i od 1 do 3 {
+  jesli i == 3 {
+    wypisz "BOOM ${i}"
+  } inaczej {
+    wypisz (podwoj i)
+  }
+}
+
+!!! "pełne rozkurwienie"

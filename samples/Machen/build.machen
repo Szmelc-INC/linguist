@@ -1,0 +1,25 @@
+#! machen 1.0
+# Build file for a Vibe-C project.
+importiere "gemeinsam.machen"
+
+setze CC      = "vibecc"
+setze FLAGS  ?= "-O2 --vibes=hoch"
+setze QUELLEN = glob("src/*.vc")
+
+standard alles
+
+ziel alles: bauen pruefen
+
+ziel bauen: $QUELLEN
+    mach $CC $FLAGS -o build/app $QUELLEN
+    sag "Fertig gebaut: build/app"
+
+ziel pruefen: bauen
+    wenn existiert("build/app")
+        mach ./build/app --selbsttest
+    sonst
+        fehler "build/app fehlt"
+    ende
+
+ziel sauber!:
+    mach rm -rf build

@@ -1,0 +1,10 @@
+;; R3000 — JSON rozkurwiacz
+moc 42
+
+def zepsuj tekst => tekst |> odwroc |> tnij 3
+
+rozwal "config.json"
+  |> zepsuj
+  |> wypluj "config.broken.json"
+
+zwroc prawda

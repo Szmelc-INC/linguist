@@ -1,0 +1,38 @@
+#!/usr/bin/env szajs
+#@ nazwa: hello
+#@ wersja: 1.0.0
+#@ licencja: MIT
+
+niech imie = "Szmelc"
+stala LIMIT = 3
+
+robota przywitaj(kto)
+    daj "Siema, ${kto}!"
+koniec
+
+wypisz przywitaj(imie)
+
+niech i = 0
+dopóki i < LIMIT
+    jeśli i == 0
+        wypisz "start"
+    albo jeśli i == LIMIT - 1
+        wypisz "koniec pętli"
+    albo
+        wypisz "środek: ${i}"
+    koniec
+    i = i + 1
+koniec
+
+dla plik w lista("./*.sx")
+    wypisz "znaleziono ${plik}"
+koniec
+
+spróbuj
+    wywal "coś się zesrało"
+złap blad
+    wypisz "złapano: ${blad}"
+koniec
+
+#[ komentarz
+   wieloliniowy ]#

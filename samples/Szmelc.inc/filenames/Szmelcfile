@@ -1,0 +1,7 @@
+%szmelc.inc 1.0 manifest
+@corp "Szmelc.INC"
+
+[project]
+name    = "Szmelc-Languages"
+version = 1.0.0
+license = MIT
